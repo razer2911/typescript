@@ -1,13 +1,6 @@
-const express = require('express');
-const router = express.Router();
+const express = require("express");
 const app = express();
 
-app.use(express.static('public'));
+app.use(express.static(__dirname + "/../public"));
 
-app.use('/', router);
-
-// app.get('/', (req, res) => {
-//     res.send('An alligator approaches!');
-// });
-
-app.listen(3000, () => console.log('Gator app listening on port 3000!'));
+app.listen(3000, () => console.log("Server listening on port 3000"));
