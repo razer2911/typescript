@@ -4,7 +4,9 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prestart": "node server/startMessage.js",
+    "start": "node server/index.js",
+    "tsc": "tsc -w"
   },
   "repository": {
     "type": "git",
@@ -17,6 +19,7 @@
   },
   "homepage": "https://github.com/razer2911/typescript#readme",
   "dependencies": {
+    "chalk": "^4.1.0",
     "eslint": "^7.2.0",
     "express": "^4.17.1"
   }
